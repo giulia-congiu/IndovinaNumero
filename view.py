@@ -21,6 +21,7 @@ class View(object):
                                      disabled= True
                                      )
         self._txtT= ft.TextField(label= "Tentativi rimanenti",
+                                 #######
                                  disabled= True
                                  )
         self._row1 = ft.Row(controls=[self._txtNmax, self._txtTmax, self._txtT])
@@ -45,4 +46,4 @@ class View(object):
         self._controller = controller
 
     def update(self):
-        self._page.update()
+        self._page.update() #aggiorna l'interfaccia grafica
